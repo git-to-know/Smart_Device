@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Smart Device</title>
+  <link rel="stylesheet" href="css/style.min.css">
+
+  <link rel="preload" href="fonts/pt-mono-v8-latin-regular.woff" as="font">
+  <link rel="preload" href="pt-mono-v8-latin-regular.woff2" as="font">
+  <link rel="preload" href="roboto-condensed-v19-latin-700.woff" as="font">
+  <link rel="preload" href="roboto-condensed-v19-latin-700.woff2" as="font">
+  <link rel="preload" href="roboto-condensed-v19-latin-regular.woff" as="font">
+  <link rel="preload" href="roboto-condensed-v19-latin-regular.woff2" as="font">
+  <link rel="preload" href="roboto-v20-latin-500.woff" as="font">
+  <link rel="preload" href="roboto-v20-latin-500.woff2" as="font">
+  <link rel="preload" href="roboto-v20-latin-regular.woff" as="font">
+  <link rel="preload" href="roboto-v20-latin-regular.woff2" as="font">
+</head>
+
+<body>
+  <header>
+    <nav></nav>
+  </header>
+  <main>
+    <section class="main-title"></section>
+    <section class="advantages">
+      <div class="advantages__wrapper">
+        <ul class="advantages__list">
+          <li class="advantages__card">
+            <svg width="29" height="39" aria-label="Иконка часы">
+              <use xlink:href="img/sprite_auto.svg#icon-watch"></use>
+            </svg>
+            <h2>Оперативные сроки</h2>
+            <p>Усовершенствованная логистическая система позволяет нам просчитывать стоимость, производить и доставлять заказы плат и комплектующих в самые короткие сроки</p>
+          </li>
+          <li class="advantages__card">
+            <svg width="35" height="35" aria-label="Иконка люди">
+              <use xlink:href="img/sprite_auto.svg#icon-provider"></use>
+            </svg>
+            <h2>Крупные поставщики</h2>
+            <p>Нашими поставщиками являются такие крупные мировые компании как: OSRAM, CREE, HOLGLITRONIC, REFOND. Сотрудничество с такими компаниями обеспичивает хорошее качество нашей продукции.
+            </p>
+          </li>
+          <li class="advantages__card">
+            <svg width="36" height="31" aria-label="Иконка конфедициальность">
+              <use xlink:href="img/sprite_auto.svg#icon-detective"></use>
+            </svg>
+            <h2>Полная конфиденциальность</h2>
+            <p>По желанию клиента  мы обеспечиваем полную конфеденциальность.
+            </p>
+          </li>
+          <li class="advantages__card">
+            <svg width="35" height="35" aria-label="Иконка стоимость">
+              <use xlink:href="img/sprite_auto.svg#icon-price"></use>
+            </svg>
+            <h2>Персонализация стоимости</h2>
+            <p>Мы подбираем определенную фабрику, поставщиков, вид доставки, чтобы установить ту цену, которая Вас устраивает.</p>
+          </li>
+        </ul>
+      </div>
+    </section>
+    <section class="description">
+      <div class="description__wrapper">
+        <div class="description__date">
+          <picture>
+            <!-- 1х: 220px; 2x: 440px -->
+            <source type="image/webp" media="(max-width: 1023px)"
+              srcset="img/2005-1x.webp 1x, img/2005-2x.webp 2x">
+            <source type="image/webp" media="(max-width: 767px)"
+              srcset="img/2005-1x.webp 1x, img/2005-2x.webp 2x">
+            <source type="image/webp" srcset="img/2005-1x.webp 1x, img/2005-2x.webp 2x">
+
+            <!-- 1х: 220px; 2x: 440px -->
+            <img src="img/2005-1x.jpg" srcset="2005-2x.jpg 2x" width="220" height="317" alt="Картинка года 2005">
+          </picture>
+        </div>
+        <div class="description__text">
+          <h2>О компании</h2>
+          <p>Мы поставляем электронные комплектующие, производим печатные платы и предоставляем мировые технологии с 1997 года. Выполняем срочные заказы и пилотные образцы до 10 дней. </p>
+          <p>Наши поставщики - мировые производители электронных компонентов: OSRAM, CREE, HOLGLITRONIC, REFOND. Печатные платы и комплектующие Service Devices применяются на предприятиях Российских Железных Дорог (РЖД), РоссАвтоПрома (ВАЗ, АвтоГАЗ), МинАтома, СпецМедТехники. Среди наших клиентов крупнейшие Производители светотехники России.</p>
+          <a class="button description__button">Подробнее</a>
+        </div>
+      </div>
+    </section>
+    <section class="products"></section>
+    <section class="feedback"></section>
+  </main>
+  <footer></footer>
+
+</body>
+
+</html>

@@ -1,0 +1,34 @@
+$blue: #0ab2f0;
+
+.description {
+  display: flex;
+  justify-content: center;
+}
+
+.description__wrapper {
+  max-width: 1170px;
+  display: flex;
+  justify-content: center;
+  padding-bottom: 96px;
+}
+
+.description__text {
+  h2 {
+    font-size: 36px;
+    line-height: 50.63px;
+    margin: 0;
+    padding-bottom: 18px;
+  }
+
+  p {
+    line-height: 21.5px;
+    margin: 0;
+    padding-bottom: 15px;
+  }
+
+  a {
+    color: $blue;
+  }
+}
+
+
