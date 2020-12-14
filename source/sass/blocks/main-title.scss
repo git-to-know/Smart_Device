@@ -1,0 +1,241 @@
+.main-title {
+  height: 878px;
+  background-color: $grey;
+  background-repeat: no-repeat;
+  position: relative;
+  display: flex;
+  justify-content: center;
+
+  &::before {
+    content: "";
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+    position: absolute;
+    background-image: url(../img/main-mask.png);
+    opacity: 0.8;
+  }
+}
+
+.main-title__wrapper {
+  max-width: 1621px;
+  padding: 258px 0 108px 200px;
+  display: flex;
+  width: 100%;
+}
+
+.main-title__text {
+  padding-top: 58px;
+  color: $white;
+  display: flex;
+  flex-direction: column;
+  z-index: 1;
+  max-width: 730px;
+  position: relative;
+  padding-right: 3.5%;
+
+  h1 {
+    font-family: "Roboto Condensed";
+    font-size: 80px;
+    line-height: 93.75px;
+    margin: 0;
+    text-transform: uppercase;
+    letter-spacing: 0.07em;
+  }
+
+  p {
+    font-size: 22px;
+    line-height: 34.5px;
+    padding-top: 26px;
+    padding-bottom: 44px;
+    padding-left: 96px;
+    margin: 0;
+    position: relative;
+
+    &::before {
+      content: "";
+      width: 66px;
+      height: 2px;
+      left: 3px;
+      top: 44px;
+      position: absolute;
+      background-color: $white;
+    }
+  }
+}
+
+.main-title__scroll-button {
+  font-size: 14px;
+  line-height: 16.58px;
+  position: absolute;
+  transform: rotate(-90deg);
+  transform-origin: right bottom;
+  top: 82%;
+  left: -74px;
+  white-space: nowrap;
+  opacity: 0.5;
+  cursor: pointer;
+  color: $white;
+
+  &:hover {
+    opacity: 1;
+  }
+}
+
+.main-title__button {
+  margin-left: 96px;
+  margin-top: 0;
+  color: $white;
+  background-color: $blue;
+  max-width: 375px;
+  border-color: $blue;
+  font-size: 16px;
+  line-height: 18.75px;
+  letter-spacing: 0.05em;
+  padding: 14px 15px 19px 17px;
+  text-align: center;
+
+  &:hover {
+    background-color: $input-blue;
+  }
+}
+
+.main-title__pic {
+  height: 515px;
+  width: 44%;
+  background-image: url(../img/device.png);
+  background-repeat: no-repeat;
+  position: relative;
+
+  &::before {
+    content: " ";
+    position: absolute;
+    bottom: -20px;
+    left: -7px;
+    width: 101%;
+    height: 131%;
+    background-image: url(../img/left-two-triangles.png);
+    background-repeat: no-repeat;
+    background-size: 671px 644px;
+    background-position: left top;
+  }
+}
+
+.main-title__button-text2 {
+  display: none;
+}
+
+@media (max-width: $tablet-width) {
+  .main-title {
+    height: 686px;
+    overflow: hidden;
+  }
+
+  .main-title__wrapper {
+    padding: 114px 0 100px 89px;
+  }
+
+  .main-title__text {
+    padding-top: 75px;
+    padding-right: 0;
+    min-width: 450px;
+
+    h1 {
+      font-size: 60px;
+      line-height: 70.31px;
+    }
+
+    p {
+      font-size: 18px;
+      line-height: 28.22px;
+      padding-left: 50px;
+      padding-bottom: 56px;
+
+      &::before {
+        width: 33px;
+      }
+    }
+  }
+
+  .main-title__scroll-button {
+      display: none;
+  }
+
+  .main-title__button {
+    max-width: 346px;
+    margin-left: 50px;
+    padding-top: 17px;
+  }
+
+  .main-title__pic {
+    height: 340px;
+    width: 100%;
+    background-size: auto 340px;
+    margin-left: -29px;;
+
+    &::before {
+      bottom: -290px;
+      left: -70px;
+      width: 151%;
+      height: 231%;
+      background-size: 530px 505px;
+    }
+  }
+}
+
+@media (max-width: $mobile-width) {
+  .main-title {
+    height: 647px;
+  }
+
+  .main-title__wrapper {
+    flex-direction: column-reverse;
+    padding: 92px 15px 70px;
+  }
+
+  .main-title__text {
+    padding-top: 0;
+    // padding-bottom: 28px;
+    max-width: auto;
+    min-width: auto;
+
+    h1 {
+      font-size: 40px;
+      line-height: 46.88px;
+    }
+
+    p {
+      font-size: 16px;
+      line-height: 25.09px;
+      padding-bottom: 41px;
+    }
+  }
+
+  .main-title__button {
+    margin-left: 0;
+  }
+
+  .main-title__button-text1 {
+    display: none;
+  }
+
+  .main-title__button-text2 {
+    display: inline-block;
+  }
+
+
+  .main-title__pic {
+    background-size: auto 220px;
+    margin-left: 10px;
+    margin-bottom: -30px;
+
+    &::before {
+      bottom: -155px;
+      left: 128px;
+      width: 151%;
+      height: 231%;
+      background-size: 500px 483px;
+    }
+  }
+}

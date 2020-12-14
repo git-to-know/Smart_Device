@@ -1,33 +1,132 @@
-$blue: #0ab2f0;
-
 .description {
   display: flex;
   justify-content: center;
 }
 
 .description__wrapper {
-  max-width: 1170px;
+  max-width: 1220px;
   display: flex;
   justify-content: center;
-  padding-bottom: 96px;
+  padding-right: 25px;
+  padding-left: 25px;
+  padding-bottom: 107px;
+  position: relative;
 }
 
 .description__text {
+  margin-left: 204px;
+
   h2 {
     font-size: 36px;
+    font-weight: 400;
     line-height: 50.63px;
     margin: 0;
-    padding-bottom: 18px;
+    padding-bottom: 22px;
   }
 
   p {
     line-height: 21.5px;
     margin: 0;
-    padding-bottom: 15px;
+    padding-bottom: 23px;
+    padding-right: 40px;
   }
 
-  a {
+  button {
     color: $blue;
+    background-color: transparent;
+    letter-spacing: 0.05em;
+
+    &:hover {
+      background-color: $blue;
+      color: $white;
+    }
+  }
+
+  &--short {
+    display: none;
+  }
+}
+
+.description__date {
+  position: absolute;
+  left: 21px;
+  top: 3px;
+}
+
+@media (max-width: $tablet-width) {
+  .description__wrapper {
+    padding-bottom: 83px;
+  }
+
+  .description__date{
+    height: 362px;
+    width: 251px;
+    left: -9px;
+    top: -2px;
+
+    img {
+      height: 100%;
+      width: 100%;
+    }
+  }
+
+  .description__text {
+    margin-left: 189px;
+
+    h2 {
+      font-size: 32px;
+      line-height: 45px;
+      margin-left: -3px;
+      padding-bottom: 25px;
+    }
+
+    p {
+      padding-right: 0;
+    }
+
+    &--short {
+      display: inline;
+    }
+
+    &--long {
+      display: none;
+    }
+  }
+
+  .description__text {
+    button {
+      padding: 15px 50px 14px 48px;
+    }
+  }
+}
+
+@media (max-width: $mobile-width) {
+  .description__wrapper {
+    padding-right: 10px;
+    padding-left: 17px;
+    padding-bottom: 64px;
+  }
+
+  .description__date {
+    display: none;
+  }
+
+  .description__text {
+    margin: 0;
+
+    h2 {
+      font-size: 28px;
+      line-height: 39.38px;
+      padding-bottom: 20px;
+    }
+
+    p {
+      padding-bottom: 43px;
+
+      &:last-of-type {
+        padding-bottom: 14px;
+      }
+    }
   }
 }
 
