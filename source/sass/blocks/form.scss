@@ -42,7 +42,6 @@
 .form__fields-input {
   display: flex;
   width: 100%;
-
 }
 
 .form__button-wrapper {
@@ -71,10 +70,6 @@
   box-sizing: border-box;
   position: relative;
 
-  input {
-    margin: 0;
-  }
-
   input + label {
     &::before {
       content: "";
@@ -102,6 +97,8 @@
   }
 
   input {
+    margin: 0;
+
     &:checked + label::after {
       display: block;
     }

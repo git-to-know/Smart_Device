@@ -1,11 +1,7 @@
 .main-nav {
-  // max-width: 1461px;
-  // padding-left: 25px;
-  // padding-right: 25px;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  // background-color: lightgreen;
   position: absolute;
   top: 33px;
   left: 3.3%;
@@ -15,7 +11,6 @@
 
 .main-nav__logo {
   width: 15%;
-  // height: 52px;
 }
 
 .main-nav__list {
@@ -28,7 +23,7 @@
 
 .main-nav__burger {
   width: 37px;
-  height: 1px;
+  height: 13px;
   &::before {
     content: "";
     position: absolute;
@@ -49,6 +44,19 @@
   a {
     color: $white;
     margin: 0;
+  }
+
+  button {
+    padding-right: 27px;
+    padding-left: 27px;
+    letter-spacing: 0.05em;
+    color: $white;
+    background-color: transparent;
+    margin: 0;
+
+    &:hover {
+      background-color: $blue;
+    }
   }
 }
 
@@ -73,28 +81,18 @@
   }
 }
 
-.main-nav__button {
-  padding-right: 27px;
-  padding-left: 27px;
-  letter-spacing: 0.05em;
-
-  &:hover {
-    background-color: $blue;
-  }
-}
-
 @media (max-width: $tablet-width) {
   .main-nav {
     top: 20px;
   }
 
   .main-nav__logo {
-
-      width: 202px;
-      height: 52px;
+    width: 202px;
+    height: 52px;
   }
 
   .main-nav__contacts {
+    button,
     a {
       display: none;
     }

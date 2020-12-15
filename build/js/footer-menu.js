@@ -1,57 +1,33 @@
 'use strict';
 (function () {
+
+  var footer = document.querySelector('.footer');
+  var footerNavToggle = document.querySelector('.footer__toggle--nav');
+  var footerContactToggle = document.querySelector('.footer__toggle--contact');
+  var footerNavMenu = document.querySelector('.footer__nav');
+  var footerContactMenu = document.querySelector('.footer__contact');
+
   if (footer) {
-
-    var footerNavToggle = footer.querySelector('.footer__toggle--nav');
-    var footerContactToggle = footer.querySelector('.footer__toggle--contact');
-    var footerNavMenu = footer.querySelector('.footer__nav');
-    var footerContactMenu = footer.querySelector('.footer__contact');
-    var footer = document.querySelector('.footer');
-
     footer.classList.remove('footer--nojs');
 
-    var NavToggleClickHandler = function (evt) {
-      if (footerNavMenu.classList.contains('footer--menu-hide')) {
-        footerNavMenu.classList.remove('footer--menu-hide');
-        footerContactMenu.classList.add('footer--menu-hide');
+    var navToggleClickHandler = function (evt) {
+      if (footerNavMenu.classList.contains('list--menu-hide')) {
+        footerNavMenu.classList.remove('list--menu-hide');
+        footerContactMenu.classList.add('list--menu-hide');
       } else {
-        footerNavMenu.classList.add('footer--menu-hide');
+        footerNavMenu.classList.add('list--menu-hide');
       }
-      footerNavToggle.removeEventListener('click', NavToggleClickHandler);
-      // footerNavToggle.addEventListener('click', NavToggleClickHandler);
     };
-    footerNavToggle.addEventListener('click', NavToggleClickHandler);
+    footerNavToggle.addEventListener('click', navToggleClickHandler);
 
-
-    // footerNavToggle.addEventListener('click', function () {
-    //   if (footerNavMenu.classList.contains('footer--menu-hide')) {
-    //     footerNavMenu.classList.remove('footer--menu-hide');
-    //     footerContactMenu.classList.add('footer--menu-hide');
-    //   } else {
-    //     footerNavMenu.classList.add('footer--menu-hide');
-    //   }
-    // });
-    var ContactToggleClickHandler = function (evt) {
-      if (footerContactMenu.classList.contains('footer--menu-hide')) {
-        footerContactMenu.classList.remove('footer--menu-hide');
-        footerNavMenu.classList.add('footer--menu-hide');
+    var contactToggleClickHandler = function (evt) {
+      if (footerContactMenu.classList.contains('list--menu-hide')) {
+        footerContactMenu.classList.remove('list--menu-hide');
+        footerNavMenu.classList.add('list--menu-hide');
       } else {
-        footerContactMenu.classList.add('footer--menu-hide');
+        footerContactMenu.classList.add('list--menu-hide');
       }
-      footerContactToggle.removeEventListener('click', ContactToggleClickHandler);
-      // footerContactToggle.addEventListener('click', ContactToggleClickHandler);
     };
-    footerContactToggle.addEventListener('click', ContactToggleClickHandler);
-
-
-
-    // footerContactToggle.addEventListener('click', function () {
-    //   if (footerContactMenu.classList.contains('footer--menu-hide')) {
-    //     footerContactMenu.classList.remove('footer--menu-hide');
-    //     footerNavMenu.classList.add('footer--menu-hide');
-    //   } else {
-    //     footerContactMenu.classList.add('footer--menu-hide');
-    //   }
-    // });
+    footerContactToggle.addEventListener('click', contactToggleClickHandler);
   }
 })();

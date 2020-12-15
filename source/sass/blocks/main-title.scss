@@ -159,7 +159,7 @@
   }
 
   .main-title__scroll-button {
-      display: none;
+    display: none;
   }
 
   .main-title__button {
@@ -172,7 +172,7 @@
     height: 340px;
     width: 100%;
     background-size: auto 340px;
-    margin-left: -29px;;
+    margin-left: -29px;
 
     &::before {
       bottom: -290px;
@@ -196,7 +196,6 @@
 
   .main-title__text {
     padding-top: 0;
-    // padding-bottom: 28px;
     max-width: auto;
     min-width: auto;
 
@@ -221,9 +220,8 @@
   }
 
   .main-title__button-text2 {
-    display: inline-block;
+    display: block;
   }
-
 
   .main-title__pic {
     background-size: auto 220px;

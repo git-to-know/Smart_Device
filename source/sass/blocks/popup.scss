@@ -10,12 +10,7 @@
   right: 0;
   margin: auto;
   background-color: rgba(0, 1, 1, 0.5);
-  // width: 100%;
-  // height: 605px;
-  // padding: 30px 39px;
-  // box-shadow: 0 0 0 20000px rgba(0, 1, 1, 0.5);
   z-index: 20;
-  // box-sizing: border-box;
 }
 
 .popup__box {
@@ -31,7 +26,8 @@
   z-index: 50;
   box-sizing: border-box;
 
-  h2, p {
+  h2,
+  p {
     color: $white;
     margin: 0;
   }
@@ -47,7 +43,6 @@
     line-height: 21.5px;
     padding: 13px 18px 30px 0;
   }
-
 }
 
 .popup__close-button {
@@ -60,7 +55,6 @@
   background-color: transparent;
   background-image: url(../img/icon-close-button.svg);
   background-size: cover;
-  // opacity: .3;
   cursor: pointer;
 
   &:hover {
@@ -77,4 +71,11 @@
 
 .popup--show {
   display: block;
+}
+
+.no-scroll {
+  height: 100%;
+  width: 100%;
+  position: fixed;
+  overflow: hidden;
 }

@@ -10,12 +10,13 @@
 .advantages__list {
   display: flex;
   flex-wrap: wrap;
+  justify-content: space-between;
   display: grid;
   grid-template-columns: repeat(2, minmax(345px, 570px));
   grid-column-gap: 30px;
   margin: 0;
   padding: 0;
-  justify-content: center;
+  justify-content: space-between;
   max-width: 1220px;
 }
 
@@ -28,6 +29,7 @@
   min-height: 299px;
   box-sizing: border-box;
   background-color: $white;
+  max-width: 570px;
 
   h2 {
     font-size: 24px;
@@ -70,6 +72,7 @@
 @media (max-width: $tablet-width) {
   .advantages__wrapper {
     padding: 50px 24px 27px;
+    width: 100%;
   }
 
   .advantages__card {
@@ -94,12 +97,15 @@
   }
 
   .advantages__list {
+    flex-direction: column;
+    justify-content: center;
     grid-template-columns: repeat(1, minmax(290px, 345px));
   }
 
   .advantages__card {
     padding: 24px 15px 27px 25px;
     margin-bottom: 21px;
+    max-width: 345px;
     h2 {
       font-size: 20px;
       line-height: 28.13px;

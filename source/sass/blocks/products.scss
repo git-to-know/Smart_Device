@@ -37,6 +37,7 @@
   display: block;
   background-repeat: no-repeat;
   position: relative;
+  background-color: $light-grey;
 
   &::before {
     content: "";
@@ -138,11 +139,6 @@
     width: 180px;
     top: 38px;
     left: 45px;
-
-    // &:nth-child(3){
-    //   top: 51px;
-    //   left: 47px;
-    // }
   }
 
   .products__card {
@@ -156,11 +152,6 @@
       left: 47px;
     }
   }
-
-  // .products__card-arrow {
-  //   bottom: 2px;
-  //   right: 3px;
-  // }
 }
 
 @media (max-width: $mobile-width) {
