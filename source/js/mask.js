@@ -1,9 +1,10 @@
 'use strict';
 (function () {
-
-var element = document.getElementById('tel');
-var maskOptions = {
-  mask: '+{7}(000)000-00-00'
-};
-var mask = IMask(element, maskOptions);
+  let element = document.querySelectorAll('input[type="tel"]');
+  let maskOptions = {
+    mask: '+{7}(000)000-00-00'
+  };
+  for (let i = 0; i < element.length; i++) {
+    let mask = IMask(element[i], maskOptions);
+  }
 })();

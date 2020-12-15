@@ -25,23 +25,15 @@
   <header class="page-header">
     <nav class="main-nav">
       <div class="main-nav__logo">
-        <a>
+        <a href="#">
           <picture>
             <source media="(max-width: 767px)" srcset="../img/icon-logo.svg">
             <img src="../img/icon-logo-white.svg" width="202" height="52" alt="Лотип">
           </picture>
         </a>
-        <!-- <a>
-          <svg width="52" height="52" aria-label="Логотип">
-            <use xlink:href="img/sprite_auto.svg#icon-logo"></use>
-          </svg>
-          <svg width="134" height="45" aria-label="Логотип текст">
-            <use xlink:href="img/sprite_auto.svg#icon-logo-text-white"></use>
-          </svg>
-        </a> -->
       </div>
       <div class="main-nav__list">
-        <div class="main-nav__burger"></div>
+        <a href="#" class="main-nav__burger"></a>
         <div class="main-nav__contacts">
           <ul class="main-nav__contact-item">
             <li>
@@ -68,7 +60,8 @@
         <div class="main-title__text">
           <h1>Печатные платы</h1>
           <p>производство и монтаж, поставка комплектующих, блоков&nbsp;и&nbsp;модулей</p>
-          <a href="#contacts" class="button main-title__button"><span class="main-title__button-text1">Получить бесплатную консультацию</span><span class="main-title__button-text2">Бесплатная консультация</span></a>
+          <a href="#contacts" class="button main-title__button"><span class="main-title__button-text1">Получить
+              бесплатную консультацию</span><span class="main-title__button-text2">Бесплатная консультация</span></a>
           <a href="#advantages" class="main-title__scroll-button">Скролл вниз</a>
         </div>
         <div class="main-title__pic"></div>
@@ -140,9 +133,10 @@
             <p>Мы поставляем электронные комплектующие, производим печатные платы и предоставляем мировые технологии с
               1997 года. Выполняем срочные заказы и пилотные образцы до 10 дней. </p>
             <p>Наши поставщики - мировые производители электронных компонентов: OSRAM, CREE, HOLGLITRONIC, REFOND.
-              Печатные платы и комплектующие Service Devices применяются на предприятиях Российских Железных Дорог<span class="description__text--short">..</span><span class="description__text--long">
-              (РЖД), РоссАвтоПрома (ВАЗ, АвтоГАЗ), МинАтома, СпецМедТехники. Среди наших клиентов крупнейшие
-              Производители светотехники России.</span></p>
+              Печатные платы и комплектующие Service Devices применяются на предприятиях Российских Железных Дорог<span
+                class="description__text--short">..</span><span class="description__text--long">
+                (РЖД), РоссАвтоПрома (ВАЗ, АвтоГАЗ), МинАтома, СпецМедТехники. Среди наших клиентов крупнейшие
+                Производители светотехники России.</span></p>
             <button class="button description__button">Подробнее</button>
           </div>
         </div>
@@ -207,7 +201,7 @@
               <input id="name" type="text" name="name" placeholder="Имя" pattern="^[А-Яа-яЁё\s]+$" required>
               <label for="name" class="visually-hidden">Поле для ввода имени</label>
 
-              <input id="tel" type="tel" name="phone-number" placeholder="Телефон" maxlength="10" required>
+              <input id="tel" type="tel" name="phone-number" placeholder="Телефон" maxlength="16" required>
               <label for="tel" class="visually-hidden">Поле для ввода телефона</label>
             </div>
 
@@ -229,91 +223,122 @@
       </div>
     </section>
   </main>
-  <footer class="footer">
-    <div class="footer__logo">
-      <svg width="216" height="52" aria-label="Лого">
-        <use xlink:href="img/sprite_auto.svg#icon-logo-black"></use>
-      </svg>
+  <footer class="footer footer--nojs">
+    <div class="footer__top">
+      <div class="footer__wrapper">
+        <div class="footer__logo-wrapper">
+          <a href="#" class="footer__logo">
+            <svg width="216" height="52" aria-label="Лого">
+              <use xlink:href="img/sprite_auto.svg#icon-logo-black"></use>
+            </svg>
+          </a>
+          <p>1999-2018 SD Service Devices</p>
+          <div class="footer__social">
+            <ul>
+              <li>
+                <a href="#">
+                  <svg width="27" height="27" aria-label="Мы в фейсбук">
+                    <use xlink:href="img/sprite_auto.svg#icon-fb"></use>
+                  </svg>
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <svg width="27" height="26" aria-label="Мы в одноклассниках">
+                    <use xlink:href="img/sprite_auto.svg#icon-mates"></use>
+                  </svg>
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <svg width="27" height="26" aria-label="Мы вконтакте">
+                    <use xlink:href="img/sprite_auto.svg#icon-vk"></use>
+                  </svg>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="footer__nav footer--menu-hide">
+          <button class="footer__toggle footer__toggle--nav" type="button"><span class="visually-hidden">Открыть
+              меню</span></button>
+          <h2>Разделы сайта</h2>
+          <ul class="footer__nav-list">
+            <ul>
+              <li><a href="#">О компании</a></li>
+              <li><a href="#">Продукты</a></li>
+              <li><a href="#">Производство печатных плат</a></li>
+              <li><a href="#">Монтаж печатных плат</a></li>
+            </ul>
+            <ul>
+              <li><a href="#">Комплектующие</a></li>
+              <li><a href="#">Доставка</a></li>
+              <li><a href="#">Контакты</a></li>
+            </ul>
+          </ul>
+        </div>
+        <div class="footer__contact footer--menu-hide">
+          <button class="footer__toggle footer__toggle--contact" type="button"><span class="visually-hidden">Открыть
+              меню</span></button>
+          <h2>Наш офис</h2>
+          <ul class="footer__contact-list">
+            <li>г. Мытищи, Олимпийский проспект, д.10</li>
+            <li>+7 (495) 589-40-50</li>
+            <li>+7 (925) 003-87-67</li>
+            <li>+7 (926) 926-080-79</li>
+          </ul>
+        </div>
+      </div>
     </div>
-    <div class="footer__social">
-      <ul>
-        <li>
-          <svg width="27" height="27" aria-label="Мы в фейсбук">
-            <use xlink:href="img/sprite_auto.svg#icon-fb"></use>
-          </svg>
-        </li>
-        <li>
-          <svg width="27" height="26" aria-label="Мы в одноклассниках">
-            <use xlink:href="img/sprite_auto.svg#icon-mates"></use>
-          </svg>
-        </li>
-        <li>
-          <svg width="27" height="26" aria-label="Мы вконтакте">
-            <use xlink:href="img/sprite_auto.svg#icon-vk"></use>
-          </svg>
-        </li>
-      </ul>
-    </div>
-    <div class="footer__nav">
-      <h2>Разделы сайта</h2>
-      <ul class="footer__nav-list">
-        <li><a href="#">О компании</a></li>
-        <li><a href="#">Продукты</a></li>
-        <li><a href="#">Производство печатных плат</a></li>
-        <li><a href="#">Монтаж печатных плат</a></li>
-        <li><a href="#">Комплектующие</a></li>
-        <li><a href="#">Доставка</a></li>
-        <li><a href="#">Контакты</a></li>
-      </ul>
-    </div>
-    <div class="footer__contact">
-      <h2>Наш офис</h2>
-      <ul class="footer__contact-list">
-        <li>г. Мытищи, Олимпийский проспект, д.10</li>
-        <li>+7 (495) 589-40-50</li>
-        <li>+7 (925) 003-87-67</li>
-        <li>+7 (926) 926-080-79</li>
-      </ul>
+    <div class="footer__bottom">
+      <div class="footer__wrapper">
+        <ul class="footer__info">
+          <li class="footer__info--rights">Все права защищены</li>
+          <li class="footer__info--date">1999-2018 SD Service Devices</li>
+          <li class="footer__info--terms">Условия конфиденциальности</li>
+          <li class="footer__info--developer">Developed by wow studio </li>
+        </ul>
+      </div>
     </div>
   </footer>
   <div class="popup">
-    <div class="popup__overlay">
-      <div class="popup__box">
-        <button type="button" aria-label="Закрыть окно" class="popup__close-button"></button>
-        <h2>Закажите звонок</h2>
-        <p>Оставьте контакты, мы проконсультируем вас бесплатно в удобное время</p>
+    <div class="popup__overlay"></div>
+    <div class="popup__box">
 
-        <form class="popup__form form" method="post">
+      <button type="button" aria-label="Закрыть окно" class="popup__close-button"></button>
+      <h2>Закажите звонок</h2>
+      <p>Оставьте контакты, мы проконсультируем вас бесплатно в удобное время</p>
 
-          <div class="form__fields-input form__fields-input--popup">
-            <input id="name" type="text" name="name" placeholder="Имя" pattern="^[А-Яа-яЁё\s]+$" required>
-            <label for="name" class="visually-hidden">Поле для ввода имени</label>
+      <form class="popup__form form" method="post">
 
-            <input class="form__tel" id="tel" type="tel" name="phone-number" placeholder="Телефон" maxlength="10" required>
-            <label for="tel" class="visually-hidden">Поле для ввода телефона</label>
+        <div class="form__fields-input form__fields-input--popup">
+          <input id="popup-name" type="text" name="name" placeholder="Имя" pattern="^[А-Яа-яЁё\s]+$" required>
+          <label for="popup-name" class="visually-hidden">Поле для ввода имени</label>
+
+          <input class="form__tel" id="popup-tel" type="tel" name="phone-number" placeholder="Телефон" maxlength="16"
+            required>
+          <label for="popup-tel" class="visually-hidden">Поле для ввода телефона</label>
+        </div>
+
+        <textarea id="popup-user-text" name="comment" rows="4" placeholder="Ваш вопрос" required></textarea>
+        <label for="popup-user-text" class="visually-hidden">Поле для текста</label>
+
+        <div class="form__button-wrapper form__button-wrapper--popup">
+          <button type="submit" class="button">Отправить</button>
+
+          <div class="form__checkbox form__checkbox--popup">
+            <input id="popup-checkbox" type="checkbox" name="personal data" class="visually-hidden" checked required>
+            <label for="popup-checkbox">Я согласен на обработку персональных данных</label>
           </div>
+        </div>
 
-          <textarea id="user-text" name="comment" rows="4" placeholder="Ваш вопрос" required></textarea>
-          <label for="user-text" class="visually-hidden">Поле для текста</label>
-
-          <div class="form__button-wrapper form__button-wrapper--popup">
-            <button type="submit" class="button">Отправить</button>
-
-            <div class="form__checkbox form__checkbox--popup">
-              <input id="checkbox" type="checkbox" name="personal data" class="visually-hidden" checked required>
-              <label for="checkbox">Я согласен на обработку персональных данных</label>
-            </div>
-          </div>
-
-        </form>
-      </div>
+      </form>
     </div>
   </div>
+  <script src="js/lib/vendor.js"></script>
   <script src="js/popup.js"></script>
   <script src="js/mask.js"></script>
-
-  <script src="js/lib/vendor.js"></script>
-  <script src="https://unpkg.com/imask"></script>
+  <script src="js/footer-menu.js"></script>
 </body>
 
 </html>

@@ -48,6 +48,10 @@
     background-color: rgba(27, 45, 55, 0.7);
   }
 
+  &:hover::before {
+    background-color: transparent;
+  }
+
   &--production {
     background-image: url(../img/boards-production1x.jpg);
   }
@@ -182,6 +186,7 @@
   .products__card-title {
     top: 20px;
     left: 35px;
+    padding-right: 0;
   }
 
   .products__card {
