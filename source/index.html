@@ -11,24 +11,24 @@
 
   <link rel="preload" href="fonts/ptmono.woff" as="font">
   <link rel="preload" href="fonts/ptmono.woff2" as="font">
-  <link rel="preload" href="fonts/Robotocondensedbold.woff" as="font">
-  <link rel="preload" href="fonts/Robotocondensedbold.woff2" as="font">
-  <link rel="preload" href="fonts/Robotocondensed.woff" as="font">
-  <link rel="preload" href="fonts/Robotocondensed.woff2" as="font">
-  <link rel="preload" href="fonts/Robotomedium.woff" as="font">
-  <link rel="preload" href="fonts/Robotomedium.woff2" as="font">
-  <link rel="preload" href="fonts/Roboto.woff" as="font">
-  <link rel="preload" href="fonts/Roboto.woff2" as="font">
+  <link rel="preload" href="fonts/robotocondensedbold.woff" as="font">
+  <link rel="preload" href="fonts/robotocondensedbold.woff2" as="font">
+  <link rel="preload" href="fonts/robotocondensed.woff" as="font">
+  <link rel="preload" href="fonts/robotocondensed.woff2" as="font">
+  <link rel="preload" href="fonts/robotomedium.woff" as="font">
+  <link rel="preload" href="fonts/robotomedium.woff2" as="font">
+  <link rel="preload" href="fonts/roboto.woff" as="font">
+  <link rel="preload" href="fonts/roboto.woff2" as="font">
 </head>
 
 <body>
   <header class="page-header">
     <nav class="main-nav">
       <div class="main-nav__logo">
-        <a href="#">
+        <a>
           <picture>
-            <source media="(max-width: 767px)" srcset="../img/icon-logo.svg">
-            <img src="../img/icon-logo-white.svg" width="202" height="52" alt="Лотип">
+            <source media="(max-width: 767px)" srcset="img/icon-logo.svg">
+            <img src="img/icon-logo-white.svg" width="202" height="52" alt="Логотип">
           </picture>
         </a>
       </div>
@@ -120,8 +120,6 @@
           <div class="description__date">
             <picture>
               <!-- 1х: 220px; 2x: 440px -->
-              <source type="image/webp" media="(max-width: 1023px)" srcset="img/2005-1x.webp 1x, img/2005-2x.webp 2x">
-              <source type="image/webp" media="(max-width: 767px)" srcset="img/2005-1x.webp 1x, img/2005-2x.webp 2x">
               <source type="image/webp" srcset="img/2005-1x.webp 1x, img/2005-2x.webp 2x">
 
               <!-- 1х: 220px; 2x: 440px -->
@@ -132,12 +130,9 @@
             <h2>О компании</h2>
             <p>Мы поставляем электронные комплектующие, производим печатные платы и предоставляем мировые технологии с
               1997 года. Выполняем срочные заказы и пилотные образцы до 10 дней. </p>
-            <p>Наши поставщики - мировые производители электронных компонентов: OSRAM, CREE, HOLGLITRONIC, REFOND.
-              Печатные платы и комплектующие Service Devices применяются на предприятиях Российских Железных Дорог<span
-                class="description__cut description__cut--short">..</span><span class="description__cut description__cut--long">
-                (РЖД), РоссАвтоПрома (ВАЗ, АвтоГАЗ), МинАтома, СпецМедТехники. Среди наших клиентов крупнейшие
-                Производители светотехники России.</span></p>
-            <button type="button" class="button">Подробнее</button>
+            <p>Наши поставщики - мировые производители электронных компонентов: OSRAM, CREE, HOLGLITRONIC, REFOND. Печатные платы и комплектующие Service Devices применяются на предприятиях Российских Железных Дорог (РЖД)&nbsp;,&nbsp;РоссАвтоПрома (ВАЗ, АвтоГАЗ), МинАтома, СпецМедТехники. Среди наших клиентов крупнейшие Производители светотехники России.
+            </p>
+            <button type="button" class="button"><a href="#">Подробнее</a></button>
           </div>
         </div>
       </section>
@@ -149,11 +144,9 @@
           <li class="products__card">
             <a href="#" class="products__pic">
               <div class="products__pic products__pic--production"></div>
-              <div class="products__card-arrow">
-                <svg width="8" height="16" aria-label="Иконка стрелочка">
-                  <use xlink:href="img/sprite_auto.svg#icon-arrow"></use>
-                </svg>
-              </div>
+              <svg width="4" height="8" aria-label="Иконка стрелочка">
+                <use xlink:href="img/sprite_auto.svg#icon-arrow"></use>
+              </svg>
               <div class="products__card-title">
                 Производство печатных&nbsp;плат
               </div>
@@ -162,11 +155,9 @@
           <li class="products__card">
             <a href="#" class="products__pic">
               <div class="products__pic products__pic--instal"></div>
-              <div class="products__card-arrow">
-                <svg width="4" height="8" aria-label="Иконка стрелочка">
-                  <use xlink:href="img/sprite_auto.svg#icon-arrow"></use>
-                </svg>
-              </div>
+              <svg width="4" height="8" aria-label="Иконка стрелочка">
+                <use xlink:href="img/sprite_auto.svg#icon-arrow"></use>
+              </svg>
               <div class="products__card-title">
                 Монтаж печатных плат
               </div>
@@ -175,11 +166,9 @@
           <li class="products__card">
             <a href="#" class="products__pic">
               <div class="products__pic products__pic--accessories"></div>
-              <div class="products__card-arrow">
-                <svg width="4" height="8" aria-label="Иконка стрелочка">
-                  <use xlink:href="img/sprite_auto.svg#icon-arrow"></use>
-                </svg>
-              </div>
+              <svg width="4" height="8" aria-label="Иконка стрелочка">
+                <use xlink:href="img/sprite_auto.svg#icon-arrow"></use>
+              </svg>
               <div class="products__card-title">
                 Комплектующие для&nbsp;светотехники
               </div>
@@ -201,7 +190,7 @@
               <input id="name" type="text" name="name" placeholder="Имя" pattern="^[А-Яа-яЁё\s]+$" required>
               <label for="name" class="visually-hidden">Поле для ввода имени</label>
 
-              <input id="tel" type="tel" name="phone-number" placeholder="Телефон" maxlength="16" required>
+              <input id="tel" type="tel" name="phone-number" placeholder="Телефон" pattern=".{16}" required>
               <label for="tel" class="visually-hidden">Поле для ввода телефона</label>
             </div>
 
@@ -227,7 +216,7 @@
     <div class="footer__top">
       <div class="footer__wrapper">
         <div class="footer__logo-wrapper">
-          <a href="#" class="footer__logo">
+          <a class="footer__logo">
             <svg width="216" height="52" aria-label="Лого">
               <use xlink:href="img/sprite_auto.svg#icon-logo-black"></use>
             </svg>
@@ -260,9 +249,11 @@
           </div>
         </div>
         <div class="footer__nav list list--menu-hide">
-          <button class="footer__toggle footer__toggle--nav" type="button"><span class="visually-hidden">Открыть
-              меню</span></button>
-          <h2>Разделы сайта</h2>
+          <div>
+            <button class="footer__toggle footer__toggle--nav" type="button"><span class="visually-hidden">Открыть
+                меню</span></button>
+            <h2>Разделы сайта</h2>
+          </div>
           <div class="footer__nav-list">
             <ul>
               <li><a href="#">О компании</a></li>
@@ -278,14 +269,18 @@
           </div>
         </div>
         <div class="footer__contact list list--menu-hide">
-          <button class="footer__toggle footer__toggle--contact" type="button"><span class="visually-hidden">Открыть
-              меню</span></button>
-          <h2>Наш офис</h2>
+          <div>
+            <button class="footer__toggle footer__toggle--contact" type="button"><span class="visually-hidden">Открыть
+                меню</span></button>
+            <h2>Наш офис</h2>
+          </div>
           <ul class="footer__contact-list">
-            <li>г. Мытищи, Олимпийский проспект, д.10</li>
-            <li>+7 (495) 589-40-50</li>
-            <li>+7 (925) 003-87-67</li>
-            <li>+7 (926) 926-080-79</li>
+            <li>
+              <p>г. Мытищи, Олимпийский проспект, д.10</p>
+            </li>
+            <li><a href="tel:+74955894050">+7 (495) 589-40-50</a></li>
+            <li><a href="tel:+79250038767">+7 (925) 003-87-67</a></li>
+            <li><a href="tel:+792692608079">+7 (926) 926-080-79</a></li>
           </ul>
         </div>
       </div>
@@ -293,10 +288,18 @@
     <div class="footer__bottom">
       <div class="footer__wrapper">
         <ul class="footer__info">
-          <li class="footer__info-item footer__info-item--rights">Все права защищены</li>
-          <li class="footer__info-item footer__info-item--date">1999-2018 SD Service Devices</li>
-          <li class="footer__info-item footer__info-item--terms">Условия конфиденциальности</li>
-          <li class="footer__info-item footer__info-item--developer">Developed by wow studio </li>
+          <li class="footer__info-item footer__info-item--rights">
+            <p>Все права защищены</p>
+          </li>
+          <li class="footer__info-item footer__info-item--date">
+            <p>1999-2018 SD Service Devices</p>
+          </li>
+          <li class="footer__info-item footer__info-item--terms">
+            <a href="#">Условия конфиденциальности</a>
+          </li>
+          <li class="footer__info-item footer__info-item--developer">
+            <p>Developed by wow studio </p>
+          </li>
         </ul>
       </div>
     </div>
@@ -315,8 +318,7 @@
           <input id="popup-name" type="text" name="name" placeholder="Имя" pattern="^[А-Яа-яЁё\s]+$" required>
           <label for="popup-name" class="visually-hidden">Поле для ввода имени</label>
 
-          <input id="popup-tel" type="tel" name="phone-number" placeholder="Телефон" maxlength="16"
-            required>
+          <input id="popup-tel" type="tel" name="phone-number" placeholder="Телефон" pattern=".{16}" required>
           <label for="popup-tel" class="visually-hidden">Поле для ввода телефона</label>
         </div>
 

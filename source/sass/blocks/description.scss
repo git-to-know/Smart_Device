@@ -27,26 +27,24 @@
 
   p {
     line-height: 21.5px;
-    margin: 0;
-    padding-bottom: 23px;
+    margin: 0 0 23px;
     padding-right: 40px;
   }
 
   button {
-    color: $blue;
     background-color: transparent;
     letter-spacing: 0.05em;
+    cursor: pointer;
+    color: $blue;
+
+    a {
+      color: inherit;
+    }
 
     &:hover {
       background-color: $blue;
       color: $white;
     }
-  }
-}
-
-.description__cut {
-  &--short {
-    display: none;
   }
 }
 
@@ -85,25 +83,21 @@
 
     p {
       padding-right: 0;
+
+      &:last-of-type {
+        overflow: hidden;
+        text-overflow: ellipsis;
+        display: -webkit-box;
+        -webkit-line-clamp: 4;
+        line-clamp: 4;
+        -webkit-box-orient: vertical;
+        box-orient: vertical;
+        height: 86px;
+      }
     }
 
     button {
       cursor: pointer;
-    }
-  }
-
-  .description__cut {
-    &--short {
-      display: inline;
-    }
-
-    &--long {
-      display: none;
-    }
-  }
-
-  .description__text {
-    button {
       padding: 15px 50px 14px 48px;
     }
   }
@@ -131,10 +125,18 @@
 
     p {
       padding-bottom: 43px;
+      margin-bottom: 0;
 
       &:last-of-type {
-        padding-bottom: 14px;
+        -webkit-line-clamp: 8;
+        line-clamp: 8;
+        height: 170px;
+        padding-bottom: 0;
       }
+    }
+
+    button {
+      margin-top: 35px;
     }
   }
 }

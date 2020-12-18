@@ -13,7 +13,7 @@
     left: 0;
     top: 0;
     position: absolute;
-    background-image: url(../img/main-mask.png);
+    background-image: url("../img/main-mask.png");
     opacity: 0.8;
   }
 }
@@ -36,7 +36,7 @@
   padding-right: 3.5%;
 
   h1 {
-    font-family: "Roboto Condensed";
+    font-family: "Roboto Condensed", "Arial", sans-serif;
     font-size: 80px;
     line-height: 93.75px;
     margin: 0;
@@ -104,7 +104,7 @@
 .main-title__pic {
   height: 515px;
   width: 44%;
-  background-image: url(../img/device.png);
+  background-image: url("../img/device.png");
   background-repeat: no-repeat;
   position: relative;
 
@@ -115,7 +115,7 @@
     left: -7px;
     width: 101%;
     height: 131%;
-    background-image: url(../img/left-two-triangles.png);
+    background-image: url("../img/left-two-triangles.png");
     background-repeat: no-repeat;
     background-size: 671px 644px;
     background-position: left top;
@@ -124,6 +124,22 @@
 
 .main-title__button-text2 {
   display: none;
+}
+
+@media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+  .main-info {
+    &::before {
+      background-image: url("../img/main-mask2x.png");
+    }
+  }
+
+  .main-title__pic {
+    background-image: url("../img/device2x.png");
+
+    &::before {
+      background-image: url("../img/left-two-triangles2x.png");
+    }
+  }
 }
 
 @media (max-width: $tablet-width) {

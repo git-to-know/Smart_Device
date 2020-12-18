@@ -1,10 +1,11 @@
 'use strict';
 (function () {
-  let element = document.querySelectorAll('input[type="tel"]');
-  let maskOptions = {
+  var formElement = document.getElementById('tel');
+  var popupElement = document.getElementById('popup-tel');
+
+  var maskOptions = {
     mask: '+{7}(000)000-00-00'
   };
-  for (let i = 0; i < element.length; i++) {
-    let mask = IMask(element[i], maskOptions);
-  }
+  var formMask = IMask(formElement, maskOptions);
+  var popupMask = IMask(popupElement, maskOptions);
 })();

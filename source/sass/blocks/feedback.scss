@@ -17,7 +17,7 @@
 .feedback__pic {
   height: 487px;
   width: 50%;
-  background-image: url(../img/paper-airplane.png);
+  background-image: url("../img/paper-airplane.png");
   background-repeat: no-repeat;
   background-size: 76%;
   background-position: 38% 40%;
@@ -31,7 +31,7 @@
     left: -17%;
     width: 101%;
     height: 131%;
-    background-image: url(../img/left-two-triangles.png);
+    background-image: url("../img/left-two-triangles.png");
     background-repeat: no-repeat;
     background-size: 99% auto;
     background-position: center;
@@ -44,9 +44,23 @@
     right: -1105px;
     width: 509px;
     height: 669px;
-    background-image: url(../img/right-two-triangles.png);
+    background-image: url("../img/right-two-triangles.png");
     background-repeat: no-repeat;
     background-size: 70%;
+  }
+}
+
+@media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+  .feedback__pic {
+    background-image: url("../img/paper-airplane2x.png");
+
+    &::before {
+      background-image: url("../img/left-two-triangles2x.png");
+    }
+
+    &::after {
+      background-image: url("../img/right-two-triangles2x.png");
+    }
   }
 }
 

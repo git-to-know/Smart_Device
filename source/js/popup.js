@@ -7,9 +7,9 @@
   var body = document.querySelector('body');
 
   if (popup) {
-    var name = popup.querySelector('[name=name]');
-    var tel = popup.querySelector('[name=phone-number]');
-    var comment = popup.querySelector('[name=comment]');
+    var name = document.getElementById('popup-name');
+    var tel = document.getElementById('popup-tel');
+    var comment = document.getElementById('popup-user-text');
 
     localStorage.setItem('name', name.value);
     localStorage.setItem('phone-number', tel.value);

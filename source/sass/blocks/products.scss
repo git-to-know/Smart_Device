@@ -54,25 +54,47 @@
   }
 
   &--production {
-    background-image: url(../img/boards-production1x.jpg);
+    background-image: url("../img/boards-production1x.jpg");
   }
 
   &--instal {
-    background-image: url(../img/boards-instal1x.jpg);
+    background-image: url("../img/boards-instal1x.jpg");
   }
 
   &--accessories {
-    background-image: url(../img/accessories1x.jpg);
+    background-image: url("../img/accessories1x.jpg");
   }
 }
 
 .products__card {
   padding-bottom: 30px;
+  position: relative;
+
+  &::before {
+    content: "";
+    width: 63px;
+    height: 63px;
+    right: 0;
+    bottom: 30px;
+    position: absolute;
+    background-color: $blue;
+    z-index: 5;
+  }
+
+  svg {
+    bottom: 4%;
+    right: 7.2%;
+    position: absolute;
+    width: 6px;
+    height: 13px;
+    fill: transparent;
+    z-index: 7;
+  }
 }
 
 .products__card-title {
   color: $white;
-  font-family: "Roboto Condensed";
+  font-family: "Roboto Condensed", "Arial", sans-serif;
   font-size: 20px;
   line-height: 30px;
   position: absolute;
@@ -82,21 +104,19 @@
   opacity: 1;
 }
 
-.products__card-arrow {
-  width: 63px;
-  height: 61px;
-  background-color: $blue;
-  position: absolute;
-  bottom: 0;
-  right: 0;
+@media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+  .products__pic {
+    &--production {
+      background-image: url("../img/boards-production2x.jpg");
+    }
 
-  svg {
-    bottom: 36%;
-    right: 42%;
-    position: absolute;
-    width: 8px;
-    height: 16px;
-    fill: transparent;
+    &--instal {
+      background-image: url("../img/boards-instal2x.jpg");
+    }
+
+    &--accessories {
+      background-image: url("../img/accessories2x.jpg");
+    }
   }
 }
 
@@ -110,9 +130,8 @@
       padding-right: 100px;
     }
   }
+
   .products__list {
-    display: flex;
-    display: grid;
     grid-template-columns: repeat(1, 1fr);
     justify-items: center;
   }
@@ -123,15 +142,15 @@
     width: 100%;
 
     &--production {
-      background-image: url(../img/boards-production1xTABLET.jpg);
+      background-image: url("../img/boards-production1xtablet.jpg");
     }
 
     &--instal {
-      background-image: url(../img/boards-instal1xTABLET.jpg);
+      background-image: url("../img/boards-instal1xtablet.jpg");
     }
 
     &--accessories {
-      background-image: url(../img/accessories1xTABLET.jpg);
+      background-image: url("../img/accessories1xtablet.jpg");
     }
   }
 
@@ -147,9 +166,34 @@
     height: 256px;
     width: 100%;
 
+    &::before {
+      bottom: 45px;
+    }
+
     &:nth-child(3) .products__card-title {
       top: 51px;
       left: 47px;
+    }
+
+    svg {
+      bottom: 10%;
+      right: 3.5%;
+    }
+  }
+
+  @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+    .products__pic {
+      &--production {
+        background-image: url("../img/boards-production2xtablet.jpg");
+      }
+
+      &--instal {
+        background-image: url("../img/boards-instal2xtablet.jpg");
+      }
+
+      &--accessories {
+        background-image: url("../img/accessories2xtablet.jpg");
+      }
     }
   }
 }
@@ -166,6 +210,7 @@
       padding-bottom: 41px;
     }
   }
+
   .products__pic {
     width: 100%;
   }
@@ -183,9 +228,18 @@
   .products__card {
     padding-bottom: 30px;
 
+    &::before {
+      bottom: 28px;
+    }
+
     &:nth-child(3) .products__card-title {
       top: 29px;
       left: 35px;
+    }
+
+    svg {
+      bottom: 9%;
+      right: 10%;
     }
   }
 }

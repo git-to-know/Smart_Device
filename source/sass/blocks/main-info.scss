@@ -1,5 +1,11 @@
 .main-info {
-  background-image: url(../img/background-triangles.png);
+  background-image: url("../img/background-triangles.png");
   background-repeat: no-repeat;
   background-position: center;
+}
+
+@media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+  .main-info {
+    background-image: url("../img/background-triangles2x.png");
+  }
 }

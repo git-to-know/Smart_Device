@@ -34,13 +34,14 @@
 
 'use strict';
 (function () {
-  let element = document.querySelectorAll('input[type="tel"]');
-  let maskOptions = {
+  var formElement = document.getElementById('tel');
+  var popupElement = document.getElementById('popup-tel');
+
+  var maskOptions = {
     mask: '+{7}(000)000-00-00'
   };
-  for (let i = 0; i < element.length; i++) {
-    let mask = IMask(element[i], maskOptions);
-  }
+  var formMask = IMask(formElement, maskOptions);
+  var popupMask = IMask(popupElement, maskOptions);
 })();
 
 'use strict';
@@ -52,9 +53,9 @@
   var body = document.querySelector('body');
 
   if (popup) {
-    var name = popup.querySelector('[name=name]');
-    var tel = popup.querySelector('[name=phone-number]');
-    var comment = popup.querySelector('[name=comment]');
+    var name = document.getElementById('popup-name');
+    var tel = document.getElementById('popup-tel');
+    var comment = document.getElementById('popup-user-text');
 
     localStorage.setItem('name', name.value);
     localStorage.setItem('phone-number', tel.value);
